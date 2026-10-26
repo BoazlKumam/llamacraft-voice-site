@@ -6,8 +6,7 @@ Everything you need to know about joining and playing on LlamaCraft.
 
 ## Server Connection Addresses (Playit.gg)
 
-- **External Host Address**: `approaching-icc.tun.ply.gg`
-- **Numeric IP Address**: `147.185.221.225`
+- **Server Address**: `approaching-icc.tun.ply.gg`
 - **Port (Java & Bedrock)**: `9256`
 - **Local Home Network (LAN)**: `192.168.0.176` (Java: `25565` / Bedrock: `19132`)
 - **Supported Versions**: Minecraft `1.20` up to `1.21` (Latest)

@@ -46,8 +46,8 @@ Type this into your Minecraft server list to play:
 
 | Platform | Server Address (Host) | Port | Supported Versions |
 | :--- | :--- | :--- | :--- |
-| **Java Edition (PC / Mac)** | `approaching-icc.tun.ply.gg` *(or `147.185.221.225`)* | `9256` | `1.20 - 1.21` |
-| **Bedrock (Phone, iPad, Windows)** | `approaching-icc.tun.ply.gg` *(or `147.185.221.225`)* | `9256` | Latest Bedrock |
+| **Java Edition (PC / Mac)** | `approaching-icc.tun.ply.gg` | `9256` | `1.20 - 1.21` |
+| **Bedrock (Phone, iPad, Windows)** | `approaching-icc.tun.ply.gg` | `9256` | Latest Bedrock |
 | **ScholarCraft Network** | Add ScholarCraft in Bedrock servers list | Auto | Latest Bedrock |
 | **Consoles (Xbox, PlayStation, Switch)** | Use phone connector app or Bedrock DNS | `9256` | Latest Bedrock |
 
