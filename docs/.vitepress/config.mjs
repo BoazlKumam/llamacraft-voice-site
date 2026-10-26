@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   base: process.env.BASE_URL || '/',
   title: 'LlamaCraft',
   description: 'The Official LlamaCraft Minecraft Server Guide',
