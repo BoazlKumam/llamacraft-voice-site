@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bedrock Voice Chat · Proximity Voice for Minecraft Bedrock &amp; Paper</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .theme-bvc {
+      --bg: #130a24;
+      --surface: #1e1238;
+      --surface-raised: #2a1b4d;
+      --border: #3f2c6e;
+      --text: #fbf8ff;
+      --muted: #a69bbd;
+      --primary: #9d71fd;
+      --accent: #38ef7d;
+    }
+    .theme-llamacraft {
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --surface-raised: #edf3fb;
+      --border: #e2e8f0;
+      --text: #182230;
+      --muted: #64748b;
+      --primary: #8ba8d5;
+      --accent: #3b9b6a;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .card-base {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    .card-raised {
+      background-color: var(--surface-raised);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: all 0.12s ease;
+    }
+    .btn-primary:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="theme-bvc antialiased selection:bg-[#9d71fd]/30">
+
+  <!-- Top Announcement Bar & Theme Switcher -->
+  <div class="border-b border-[var(--border)] bg-[var(--surface)] text-xs py-2 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[var(--accent)] animate-pulse"></span>
+        <span class="font-medium">Compatible with Minecraft Bedrock 1.21+ and Paper / Fabric servers</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-[var(--muted)]">Site Theme:</span>
+        <button onclick="setTheme('bvc')" id="btn-theme-bvc" class="px-2 py-0.5 rounded font-bold bg-[var(--surface-raised)] border border-[var(--border)]">BVC Dark</button>
+        <button onclick="setTheme('llamacraft')" id="btn-theme-llama" class="px-2 py-0.5 rounded font-medium text-[var(--muted)] hover:text-[var(--text)]">LlamaCraft</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[var(--bg)]/85 border-b border-[var(--border)]">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-bold text-base tracking-tight">
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-[var(--primary)] to-[var(--accent)] flex items-center justify-center text-white font-black text-sm shadow-sm">
+          B
+        </div>
+        <span>Bedrock Voice Chat</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-[var(--muted)]">
+        <a href="#how" class="hover:text-[var(--text)] transition-colors">How it works</a>
+        <a href="#platforms" class="hover:text-[var(--text)] transition-colors">Platforms</a>
+        <a href="#operators" class="hover:text-[var(--text)] transition-colors">Run a server</a>
+        <a href="#versus" class="hover:text-[var(--text)] transition-colors">Why not Discord?</a>
+        <a href="#faq" class="hover:text-[var(--text)] transition-colors">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://discord.gg" target="_blank" class="hidden sm:inline-flex text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--surface)] transition-all">
+          Discord
+        </a>
+        <a href="#download" class="btn-primary text-xs px-4 py-2">
+          Download
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-4 pt-16 pb-20 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--border)] bg-[var(--surface)] text-xs font-semibold text-[var(--muted)] mb-6">
+      <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"></span>
+      PROXIMITY VOICE · MINECRAFT BEDROCK &amp; JAVA
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl font-black tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+      Five minutes, and your world has voice.
+    </h1>
+
+    <p class="text-base sm:text-lg text-[var(--muted)] max-w-2xl mx-auto leading-relaxed mb-8">
+      Add one addon to your world and run one binary next to your server. It's free, you host it yourself, and your world files stay exactly as they are.
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-3 mb-14">
+      <a href="#download" class="btn-primary text-sm px-6 py-3 shadow-lg">
+        Get the Bedrock App
+      </a>
+      <a href="#operators" class="text-sm font-bold px-6 py-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] hover:bg-[var(--surface-raised)] transition-all">
+        Read the Install Guide
+      </a>
+    </div>
+
+    <!-- Rotating Platform Matrix Hero Pill -->
+    <div class="card-raised p-6 max-w-3xl mx-auto text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="text-xs font-bold uppercase tracking-wider text-[var(--muted)] mb-1">The Part No Java Mod Can Do</div>
+        <div class="text-lg sm:text-xl font-bold flex items-center gap-2 flex-wrap">
+          <span>Your friend on</span>
+          <span id="platform-rotator" class="px-2.5 py-0.5 rounded-lg bg-[var(--primary)] text-white font-extrabold transition-all duration-300">PlayStation</span>
+          <span>is in the conversation.</span>
+        </div>
+      </div>
+      <span class="text-xs text-[var(--muted)] shrink-0 sm:text-right">
+        iOS · Android · PC · Mac<br/>Consoles join via mobile app
+      </span>
+    </div>
+  </section>
+
+  <!-- Feature Matrix Bento Grid -->
+  <section id="how" class="max-w-6xl mx-auto px-4 py-16 border-t border-[var(--border)]">
+    <div class="mb-12">
+      <span class="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">Features &amp; Spatial Audio</span>
+      <h2 class="text-3xl font-black tracking-tight mt-1">Built specifically for how Minecraft is played.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Feature 1: Compatibility -->
+      <div class="card-base p-7 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-bold text-[var(--muted)] uppercase mb-2">Compatibility</div>
+          <h3 class="text-xl font-bold mb-3">It works with the world you already have.</h3>
+          <p class="text-sm text-[var(--muted)] leading-relaxed mb-6">
+            Install the Bedrock Addon for your world, the addon for your Realm/Aternos server, or the Java plugin for PaperMC or Fabric.
+          </p>
+        </div>
+        <ul class="space-y-2 text-xs text-[var(--muted)]">
+          <li class="flex items-center gap-2">✓ Bedrock Dedicated Server, Aternos, and any self-hosted machine</li>
+          <li class="flex items-center gap-2">✓ Java cross-play: PaperMC &amp; Fabric from Modrinth</li>
+          <li class="flex items-center gap-2">✓ 100% self-hosted, private, and source-available</li>
+        </ul>
+      </div>
+
+      <!-- Feature 2: Proximity Falloff Curve -->
+      <div class="card-base p-7 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-bold text-[var(--muted)] uppercase mb-2">Proximity Physics</div>
+          <h3 class="text-xl font-bold mb-3">You get louder by walking closer.</h3>
+          <p class="text-sm text-[var(--muted)] leading-relaxed mb-6">
+            Volume drops off along a natural distance curve you configure. Whisper to the person beside you, shout across a build site, or watch as a spectator without being heard.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-2 text-center text-xs">
+          <div class="card-raised p-2.5">
+            <div class="font-extrabold text-[var(--text)]">24 Blocks</div>
+            <div class="text-[var(--muted)] mt-0.5">Default Range</div>
+          </div>
+          <div class="card-raised p-2.5">
+            <div class="font-extrabold text-[var(--text)]">Crouch</div>
+            <div class="text-[var(--muted)] mt-0.5">Whisper Mode</div>
+          </div>
+          <div class="card-raised p-2.5">
+            <div class="font-extrabold text-[var(--text)]">Spectator</div>
+            <div class="text-[var(--muted)] mt-0.5">Silent Listener</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Channels -->
+      <div class="card-base p-7 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-bold text-[var(--muted)] uppercase mb-2">Squad Channels</div>
+          <h3 class="text-xl font-bold mb-3">Split off into your own channel.</h3>
+          <p class="text-sm text-[var(--muted)] leading-relaxed mb-6">
+            Taking on a trial chamber or the Deep Dark? Create a private squad channel with your team. Talk at full volume across any distance while still hearing spatial footsteps around you.
+          </p>
+        </div>
+        <ul class="space-y-2 text-xs text-[var(--muted)]">
+          <li class="flex items-center gap-2">✓ Persistent groups that survive player relogs</li>
+          <li class="flex items-center gap-2">✓ Per-player volume slider from 0% to 150%</li>
+          <li class="flex items-center gap-2">✓ Mute and deafen without disconnecting</li>
+        </ul>
+      </div>
+
+      <!-- Feature 4: For Creators & Streamers -->
+      <div class="card-base p-7 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-bold text-[var(--muted)] uppercase mb-2">Content Creators</div>
+          <h3 class="text-xl font-bold mb-3">Record everyone. On separate tracks.</h3>
+          <p class="text-sm text-[var(--muted)] leading-relaxed mb-6">
+            Every player gets their own timecoded audio track. Lower one noisy player in post-production, cut another out, and keep your audio in sync with your gameplay recording.
+          </p>
+        </div>
+        <ul class="space-y-2 text-xs text-[var(--muted)]">
+          <li class="flex items-center gap-2">✓ Multi-track timecoded export for video editors</li>
+          <li class="flex items-center gap-2">✓ Elgato Stream Deck plugin integration</li>
+          <li class="flex items-center gap-2">✓ Local OBS virtual audio routing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section: "Why not use Discord?" -->
+  <section id="versus" class="max-w-6xl mx-auto px-4 py-16 border-t border-[var(--border)]">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">Feature Comparison</span>
+      <h2 class="text-3xl font-black tracking-tight mt-1 mb-3">Why not just use a Discord call?</h2>
+      <p class="text-sm text-[var(--muted)] leading-relaxed">
+        Standard call apps sit alongside your screen and treat everyone as one flat audio channel. Proximity voice is woven into the Minecraft coordinate space.
+      </p>
+    </div>
+
+    <div class="card-base overflow-hidden max-w-4xl mx-auto">
+      <table class="w-full text-left text-xs sm:text-sm border-collapse">
+        <thead>
+          <tr class="border-b border-[var(--border)] bg-[var(--surface-raised)] text-[var(--muted)]">
+            <th class="py-3 px-4 font-bold">Capability</th>
+            <th class="py-3 px-4 font-bold text-[var(--accent)]">Bedrock Voice Chat</th>
+            <th class="py-3 px-4 font-bold">Discord Call</th>
+            <th class="py-3 px-4 font-bold">Simple Voice Chat</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-[var(--border)]">
+          <tr>
+            <td class="py-3.5 px-4 font-medium">3D Spatial Volume &amp; Head Panning</td>
+            <td class="py-3.5 px-4 font-bold text-[var(--accent)]">✓ Native 3D</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">✗ Flat Call</td>
+            <td class="py-3.5 px-4 text-[var(--text)]">✓ Native 3D</td>
+          </tr>
+          <tr>
+            <td class="py-3.5 px-4 font-medium">Works on Bedrock (Mobile, Xbox, PS, Switch)</td>
+            <td class="py-3.5 px-4 font-bold text-[var(--accent)]">✓ All Devices</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">⚠ App sidecar only</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">✗ Java Mod Only</td>
+          </tr>
+          <tr>
+            <td class="py-3.5 px-4 font-medium">Adjust Audio Settings Inside Minecraft GUI</td>
+            <td class="py-3.5 px-4 font-bold text-[var(--accent)]">✓ In-Game Form</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">✗ Must Alt-Tab</td>
+            <td class="py-3.5 px-4 text-[var(--text)]">✓ In-Game HUD (V key)</td>
+          </tr>
+          <tr>
+            <td class="py-3.5 px-4 font-medium">Multi-Track Timecoded Recording for Creators</td>
+            <td class="py-3.5 px-4 font-bold text-[var(--accent)]">✓ Separate Tracks</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">✗ Merged Master</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">⚠ Third-Party Addon</td>
+          </tr>
+          <tr>
+            <td class="py-3.5 px-4 font-medium">Self-Hosted on Linux Server (Zero Subscriptions)</td>
+            <td class="py-3.5 px-4 font-bold text-[var(--accent)]">✓ 100% Free / Self-Hosted</td>
+            <td class="py-3.5 px-4 text-[var(--muted)]">⚠ Discord Cloud Servers</td>
+            <td class="py-3.5 px-4 text-[var(--text)]">✓ Self-Hosted Plugin</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="max-w-6xl mx-auto px-4 py-16 border-t border-[var(--border)]">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">Cross-Platform Downloads</span>
+      <h2 class="text-3xl font-black tracking-tight mt-1 mb-2">Every platform. Every device.</h2>
+      <p class="text-sm text-[var(--muted)]">Download the free companion app for your machine.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center text-xs">
+      <div class="card-base p-4 flex flex-col justify-between">
+        <div>
+          <div class="font-bold text-sm mb-1">Windows</div>
+          <div class="text-[var(--muted)] mb-3">64-bit installer</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg">Download</a>
+      </div>
+      <div class="card-base p-4 flex flex-col justify-between">
+        <div>
+          <div class="font-bold text-sm mb-1">macOS</div>
+          <div class="text-[var(--muted)] mb-3">Apple Silicon &amp; Intel</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg">Download</a>
+      </div>
+      <div class="card-base p-4 flex flex-col justify-between">
+        <div>
+          <div class="font-bold text-sm mb-1">iOS</div>
+          <div class="text-[var(--muted)] mb-3">App Store</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg">Get App</a>
+      </div>
+      <div class="card-base p-4 flex flex-col justify-between">
+        <div>
+          <div class="font-bold text-sm mb-1">Android</div>
+          <div class="text-[var(--muted)] mb-3">Google Play / APK</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg">Get App</a>
+      </div>
+      <div class="card-base p-4 flex flex-col justify-between">
+        <div>
+          <div class="font-bold text-sm mb-1">Linux</div>
+          <div class="text-[var(--muted)] mb-3">AppImage &amp; Deb</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg">Download</a>
+      </div>
+      <div class="card-base p-4 flex flex-col justify-between border-[var(--primary)]">
+        <div>
+          <div class="font-bold text-sm mb-1">Server Jar</div>
+          <div class="text-[var(--muted)] mb-3">Paper &amp; BDS</div>
+        </div>
+        <a href="#" class="btn-primary py-1.5 px-2 rounded-lg bg-[var(--primary)]">Modrinth</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section id="faq" class="max-w-4xl mx-auto px-4 py-16 border-t border-[var(--border)]">
+    <div class="mb-10 text-center">
+      <span class="text-xs font-bold uppercase tracking-wider text-[var(--accent)]">Questions</span>
+      <h2 class="text-3xl font-black tracking-tight mt-1">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="space-y-3 text-sm">
+      <details class="card-base p-4 cursor-pointer">
+        <summary class="font-bold text-[var(--text)]">Do I need to run a server?</summary>
+        <p class="text-[var(--muted)] text-xs mt-2 leading-relaxed">
+          If you play on an existing server, only the server host needs to run the voice server binary or Paper plugin. Players just install the companion app on their phone or PC and it connects automatically when you join the world.
+        </p>
+      </details>
+
+      <details class="card-base p-4 cursor-pointer">
+        <summary class="font-bold text-[var(--text)]">Is Bedrock Voice Chat free?</summary>
+        <p class="text-[var(--muted)] text-xs mt-2 leading-relaxed">
+          Yes. The software is 100% free, open-source, and self-hosted with zero subscription paywalls or premium tiers.
+        </p>
+      </details>
+
+      <details class="card-base p-4 cursor-pointer">
+        <summary class="font-bold text-[var(--text)]">How do console players (Xbox, PS, Switch) use voice chat?</summary>
+        <p class="text-[var(--muted)] text-xs mt-2 leading-relaxed">
+          Because Xbox, PlayStation, and Nintendo Switch cannot run background third-party background software, console players simply run the free companion app on their phone or tablet while playing on console. The app tracks your in-game coordinates and handles microphone audio seamlessly.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[var(--border)] bg-[var(--surface)] text-xs py-10 px-4 text-[var(--muted)]">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-bold text-[var(--text)]">Bedrock Voice Chat Clone</span> · Production landing page build
+      </div>
+      <div class="flex gap-6">
+        <a href="#how" class="hover:text-[var(--text)]">How it works</a>
+        <a href="#download" class="hover:text-[var(--text)]">Downloads</a>
+        <a href="#versus" class="hover:text-[var(--text)]">Discord Comparison</a>
+        <a href="#faq" class="hover:text-[var(--text)]">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Rotating Platform Pills
+    const platforms = ['PlayStation', 'Xbox', 'Nintendo Switch', 'iPhone', 'Android', 'Windows PC', 'PaperMC'];
+    let idx = 0;
+    const rot = document.getElementById('platform-rotator');
+    setInterval(() => {
+      idx = (idx + 1) % platforms.length;
+      rot.style.opacity = '0';
+      rot.style.transform = 'translateY(-4px)';
+      setTimeout(() => {
+        rot.textContent = platforms[idx];
+        rot.style.opacity = '1';
+        rot.style.transform = 'translateY(0)';
+      }, 150);
+    }, 2200);
+
+    // Theme Switcher between BVC Cosmic Violet and LlamaCraft 60-30-10
+    function setTheme(t) {
+      document.body.className = t === 'bvc' ? 'theme-bvc antialiased selection:bg-[#9d71fd]/30' : 'theme-llamacraft antialiased selection:bg-[#8ba8d5]/30';
+      document.getElementById('btn-theme-bvc').className = t === 'bvc' ? 'px-2 py-0.5 rounded font-bold bg-[var(--surface-raised)] border border-[var(--border)]' : 'px-2 py-0.5 rounded font-medium text-[var(--muted)] hover:text-[var(--text)]';
+      document.getElementById('btn-theme-llama').className = t === 'llamacraft' ? 'px-2 py-0.5 rounded font-bold bg-[var(--surface-raised)] border border-[var(--border)]' : 'px-2 py-0.5 rounded font-medium text-[var(--muted)] hover:text-[var(--text)]';
+    }
+  </script>
+</body>
+</html>
