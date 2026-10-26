@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/llamacraft-voice-site/',
   title: 'LlamaCraft',
-  description: 'Official Cross-Play Minecraft Server & Proximity Voice Chat',
+  description: 'Official Server Statistics, Custom Enchantments & Player Knowledge Base',
   lang: 'en-US',
   head: [
     ['link', { rel: 'icon', href: '/llama.jpg' }],
@@ -11,24 +11,40 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: '/llama.jpg',
-    siteTitle: 'LlamaCraft',
+    siteTitle: 'LlamaCraft Stats & Wiki',
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Voice Chat', link: '/guide/voice-chat' },
-      { text: 'How to Join', link: '/guide/how-to-join' },
-      { text: 'Rules', link: '/guide/rules' },
-      { text: 'FAQ', link: '/guide/faq' }
+      { text: 'What Enchants Go Where', link: '/enchants/gear-matrix' },
+      { text: 'Server Specs', link: '/stats/server' },
+      { text: 'Loot & Economy', link: '/stats/economy' },
+      { text: 'Commands', link: '/info/commands' },
+      { text: 'How to Join', link: '/info/how-to-join' }
     ],
 
     sidebar: [
       {
-        text: 'Server Guides',
+        text: 'Enchantment Compendium',
         items: [
-          { text: 'How to Join (Cross-Play)', link: '/guide/how-to-join' },
-          { text: 'Proximity Voice Chat', link: '/guide/voice-chat' },
-          { text: 'Server Rules & Code of Conduct', link: '/guide/rules' },
-          { text: 'Frequently Asked Questions', link: '/guide/faq' }
+          { text: 'What Enchants Go Where (Gear Matrix)', link: '/enchants/gear-matrix' }
+        ]
+      },
+      {
+        text: 'Server Statistics & Infrastructure',
+        items: [
+          { text: 'Hardware, Ports & Specs', link: '/stats/server' },
+          { text: 'Fishing Probabilities & Economy', link: '/stats/economy' }
+        ]
+      },
+      {
+        text: 'General Server Information',
+        items: [
+          { text: 'Master Commands Reference', link: '/info/commands' },
+          { text: 'How to Join (Java, Bedrock, Console)', link: '/info/how-to-join' },
+          { text: 'Land Claims & Siege Mechanics', link: '/info/claims-siege' },
+          { text: 'Proximity Voice Chat Guide', link: '/info/voice-chat' },
+          { text: 'Server Rules & Code of Conduct', link: '/info/rules' },
+          { text: 'Frequently Asked Questions', link: '/info/faq' }
         ]
       }
     ],
@@ -38,11 +54,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg' }
+      { icon: 'github', link: 'https://github.com/BoazlKumam/llamacraft-voice-site' }
     ],
 
     footer: {
-      message: 'Self-hosted on PaperMC with Bedrock & Java Cross-Play.',
+      message: 'Official LlamaCraft Server Intelligence & Player Manual.',
       copyright: 'Copyright © 2026 LlamaCraft'
     }
   }

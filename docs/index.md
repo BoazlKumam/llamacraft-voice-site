@@ -3,61 +3,61 @@ layout: home
 
 hero:
   name: "LlamaCraft"
-  text: "Proximity Voice & Cross-Play"
-  tagline: "Experience immersive 3D directional audio across Bedrock and Java on Minecraft 1.21+ with zero client mods."
+  text: "Server Intelligence & Statistics Hub"
+  tagline: "Infrastructure metrics, complete 53 custom enchantment gear matrix, fishing drop probabilities, and player survival guides."
   image:
     src: /llama.jpg
     alt: LlamaCraft Voxel Mascot
   actions:
     - theme: brand
-      text: How to Join
-      link: /guide/how-to-join
+      text: What Enchants Go Where
+      link: /enchants/gear-matrix
     - theme: alt
-      text: Voice Chat Guide
-      link: /guide/voice-chat
+      text: Server Specs & Stats
+      link: /stats/server
     - theme: alt
-      text: Discord Server
-      link: https://discord.gg
+      text: Master Commands
+      link: /info/commands
 
 features:
-  - title: 3D Directional Voice Chat
-    details: Hear players based on their in-game location. Voices naturally fade with distance, carry through caves, and isolate behind walls.
-  - title: True Cross-Play Parity
-    details: Seamlessly connects Java Edition, Bedrock Mobile, Windows PC, Consoles (Xbox, PlayStation, Switch), and Education Edition.
-  - title: Zero Bedrock Mods
-    details: Bedrock players connect without jailbreaking or modifying their game. Console players use the free phone companion app.
-  - title: Grief Prevention & Claims
-    details: Protect your builds, chests, and terrain with custom claim boundaries while keeping siege mechanics balanced and active.
-  - title: Player Economy & Trade
-    details: Dynamic player shops, interactive menu interfaces, and trade systems built for multiplayer collaboration.
-  - title: High Performance Paper Core
-    details: Hosted on dedicated hardware with optimized tick timing, anti-cheat protection, and low-latency packet routing.
+  - title: What Enchants Go Where
+    details: Complete matrix mapping all 53 custom enchantments and vanilla caps across Helmets, Chestplates, Leggings, Boots, Swords, Axes, Bows, and Maces.
+    link: /enchants/gear-matrix
+  - title: Live Technical Infrastructure
+    details: Dedicated Linux hardware cluster running Paper 1.21.x with 20.0 TPS target, asynchronous chunking, and low-latency packet routing.
+    link: /stats/server
+  - title: Fishing & Loot Probabilities
+    details: Exact mathematical drop weights and catch rates for Sealed Tomes (Uncommon 4.66%, Arcane 2.33%, Relic 0.62%).
+    link: /stats/economy
+  - title: Cross-Play Endpoints
+    details: Complete port directory for Java (25565), Bedrock Mobile & PC (19132), Console DNS bridges, and Education Edition.
+    link: /info/how-to-join
+  - title: Territory & Siege Windows
+    details: GriefPrevention land claims with balanced SiegeTime raiding windows, claim shields, and TNT / crystal raid physics.
+    link: /info/claims-siege
+  - title: Proximity Directional Audio
+    details: 3D spatial directional voice setup with zero client mods required on Bedrock and modded Simple Voice Chat on Java.
+    link: /info/voice-chat
 ---
 
-## Server Connection Information
+## Server Quick Statistics
 
-Connect directly from any supported Minecraft version:
-
-| Platform | Server Address (IP) | Port | Supported Versions |
-| :--- | :--- | :--- | :--- |
-| **Java Edition** | `164.152.106.210` | `25565` | `1.20.x - 1.21.x` |
-| **Bedrock (Mobile & PC)** | `164.152.106.210` | `19132` | `1.21.x` (Latest) |
-| **Xbox / PlayStation / Switch** | Via Bedrock DNS / App | `19132` | `1.21.x` (Latest) |
-| **Education Edition** | `164.152.106.210` | `19132` | Supported via Protocol |
-
-::: tip Quick Join
-No whitelist is enabled. Join the server, claim your starter kit, and explore the spawn hub.
-:::
+| Data Point | Value | Notes |
+| :--- | :--- | :--- |
+| **Server Address (Java)** | `164.152.106.210:25565` | Compatible with 1.20.x - 1.21.x |
+| **Server Address (Bedrock)** | `164.152.106.210:19132` | Bedrock Mobile, Windows 10/11, Consoles |
+| **Server Architecture** | Paper 1.21.x on Dedicated Linux | Monitored by Crafty Controller 4 |
+| **Target Tick Timing** | 20.0 TPS / < 18ms MSPT | Asynchronous chunk loading |
+| **Active Dimensions** | 6 Worlds | Overworld, Nether, End, Hub, SurvSpawn, Siyon |
+| **Custom Enchantments** | 53 Custom Enchants | Uncommon (19), Rare (23), Mythic (11) |
+| **Claim Blocks Accrual** | 100 blocks / hour played | Starts with 100 free claim blocks |
 
 ---
 
-## Why In-Game Proximity Voice?
+## Quick Navigation Directory
 
-Standard Discord or party chat puts everyone into one flat room where players talk over each other regardless of where they are in the world. 
-
-LlamaCraft proximity voice chat calculates real-time 3D coordinates so voices originate from where players stand:
-
-- **Distance Roll-Off**: Voices get quieter as players walk away and fade out completely past 24 blocks.
-- **Directional Sound**: Turn your character's head to pinpoint exactly where another player is calling from.
-- **Whispering and Shouting**: Sneak to whisper quietly to teammates, or sprint to shout across a fortress.
-- **Console Friendly**: Xbox, PS, and Switch players run the companion link on their phone while playing on TV.
+- **[What Enchants Go Where Matrix](/enchants/gear-matrix)**: Check max levels and compatibility for any weapon, armor piece, or tool.
+- **[Hardware, Ports & Specs](/stats/server)**: Review port forwarding, MSPT thresholds, and spawner drop mechanics.
+- **[Economy & Fishing Probabilities](/stats/economy)**: See exact tome weights, market rules, and wealth tiers.
+- **[Master Commands Guide](/info/commands)**: Commands for `/menu`, `/tpa`, `/claim`, `/shop`, `/voice`, and `/duel`.
+- **[How to Join](/info/how-to-join)**: Setup guides for Java, Bedrock Mobile, Xbox, PlayStation, and Switch.
