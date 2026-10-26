@@ -13,11 +13,11 @@ hero:
       text: What Enchants Go on What
       link: /enchants/gear-guide
     - theme: alt
+      text: How to Join
+      link: /info/how-to-join
+    - theme: alt
       text: Domain Expansions
       link: /info/domains
-    - theme: alt
-      text: Enchant Conflicts
-      link: /enchants/conflicts
 
 features:
   - title: Custom Enchants
@@ -36,19 +36,20 @@ features:
     details: Claim your land with a golden shovel so nobody can grief your blocks or steal your loot.
     link: /info/claims
   - title: Play on Any Device
-    details: Java players, Bedrock players on phones, tablets, PCs, and consoles all play together in the same world.
+    details: Connect via Playit.gg or ScholarCraft from Java, Bedrock Mobile, PC, and consoles.
     link: /info/how-to-join
 ---
 
-## Server IP and Connection
+## Server IP and Connection (Playit.gg)
 
 Type this into your Minecraft server list to play:
 
-| Device | Server Address | Port | Version |
+| Platform | Server Address (Host) | Port | Supported Versions |
 | :--- | :--- | :--- | :--- |
-| **Java (PC, Mac)** | `164.152.106.210` | `25565` | `1.20 - 1.21` |
-| **Bedrock (Phone, iPad, Windows 10/11)** | `164.152.106.210` | `19132` | Latest Bedrock |
-| **Consoles (Xbox, PlayStation, Switch)** | Use Bedrock DNS | `19132` | Latest Bedrock |
+| **Java Edition (PC / Mac)** | `approaching-icc.tun.ply.gg` *(or `147.185.221.225`)* | `9256` | `1.20 - 1.21` |
+| **Bedrock (Phone, iPad, Windows)** | `approaching-icc.tun.ply.gg` *(or `147.185.221.225`)* | `9256` | Latest Bedrock |
+| **ScholarCraft Network** | Add ScholarCraft in Bedrock servers list | Auto | Latest Bedrock |
+| **Consoles (Xbox, PlayStation, Switch)** | Use phone connector app or Bedrock DNS | `9256` | Latest Bedrock |
 
 ---
 
@@ -57,6 +58,6 @@ Type this into your Minecraft server list to play:
 - **[What Enchants Go on What](/enchants/gear-guide)**: Full list of custom enchants for helmets, chestplates, swords, and tools.
 - **[Enchant Conflicts & Drawbacks](/enchants/conflicts)**: Learn what enchants cannot go together and which ones have trade-offs.
 - **[Domain Expansions Guide](/info/domains)**: How to cast your domain, pick rules, and defend with shields.
+- **[How to Join & ScholarCraft](/info/how-to-join)**: Step-by-step setup for every device.
 - **[Protect Your Base](/info/claims)**: How to claim your land and add friends.
-- **[How to Join](/info/how-to-join)**: Easy connection steps for every device.
 - **[Commands List](/info/commands)**: Helpful commands like `/menu`, `/tpa`, `/home`, and `/spawn`.

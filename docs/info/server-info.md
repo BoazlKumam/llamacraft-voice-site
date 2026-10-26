@@ -4,21 +4,23 @@ Everything you need to know about joining and playing on LlamaCraft.
 
 ---
 
-## Server Address
+## Server Connection Addresses (Playit.gg)
 
-- **Server IP**: `164.152.106.210`
-- **Java Port**: `25565` (Default)
-- **Bedrock Port**: `19132` (Default)
-- **Minecraft Version**: Supports `1.20` up to `1.21` (Latest)
+- **External Host Address**: `approaching-icc.tun.ply.gg`
+- **Numeric IP Address**: `147.185.221.225`
+- **Port (Java & Bedrock)**: `9256`
+- **Local Home Network (LAN)**: `192.168.0.176` (Java: `25565` / Bedrock: `19132`)
+- **Supported Versions**: Minecraft `1.20` up to `1.21` (Latest)
 
 ---
 
 ## Game Features
 
-- **Cross-Play**: Java players and Bedrock players (phones, tablets, Windows, and consoles) play in the same world together.
+- **Cross-Play**: Java players, Bedrock players, and ScholarCraft players all play in the same world together.
 - **Proximity Voice Chat**: Talk with players near you directly in game.
 - **Base Protection**: Use a golden shovel to lock your base and chests so no one can break or steal your things.
 - **Custom Enchants**: Catch magic books by fishing and put special abilities on your swords, bows, armor, and tools.
+- **Domain Expansions**: Trap enemies inside a private arena in the sky and pick battle rules.
 - **Guaranteed Boss Drops**: 
   - Evokers always drop a **Totem of Undying**.
   - Wardens drop rare fragments and special treasures.
