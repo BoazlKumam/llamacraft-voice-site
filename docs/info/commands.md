@@ -1,55 +1,54 @@
-# Master Commands Reference
+# Commands List
 
-Quick reference of essential player commands available on LlamaCraft.
-
----
-
-## 1. Navigation & Teleportation
-
-| Command | Description | Notes |
-| :--- | :--- | :--- |
-| `/menu` | Opens the master interactive server GUI menu | Bedrock & Java compatible |
-| `/spawn` | Teleports to the survival hub spawn | 3-second combat warmup |
-| `/tpa <player>` | Sends a teleport request to another player | Expires after 60 seconds |
-| `/tpaccept` | Accepts the most recent teleport request | Cancelled if moving during warmup |
-| `/tpdeny` | Denies a pending teleport request | Silent rejection |
-| `/sethome [name]`| Sets a private teleport waypoint at your location | Default limit: 3 homes |
-| `/home [name]` | Teleports to your saved waypoint | Cancelled on incoming damage |
-| `/back` | Returns to your previous death or teleport point | 5-minute cooldown |
-| `/rtp` | Randomly teleports to safe wilderness coordinates | Minimum 1,500 blocks from spawn |
+Here are all the simple commands you can use on LlamaCraft.
 
 ---
 
-## 2. Land Protection (GriefPrevention)
+## Moving Around & Waypoints
 
-| Command | Description | Notes |
-| :--- | :--- | :--- |
-| `/claim` | Creates a new claim box (requires golden shovel) | Set two opposite corners |
-| `/trust <player>` | Grants full build and chest access to a player | Works across whole claim |
-| `/containertrust <player>` | Grants chest, hopper, furnace, and inventory access | Cannot break or place blocks |
-| `/accesstrust <player>` | Grants button, lever, and door access | For public base visitors |
-| `/untrust <player>` | Revokes all permissions from a player | Immediate effect |
-| `/abandonclaim` | Deletes the claim you are currently standing inside | Refunds claim blocks |
-| `/claimslist` | Displays all your active claims and remaining claim blocks | Lists coordinates |
-
----
-
-## 3. Economy & Player Markets
-
-| Command | Description | Notes |
-| :--- | :--- | :--- |
-| `/bal` or `/balance` | Displays your current wallet balance | Formats with k/m/b suffixes |
-| `/pay <player> <amount>` | Transfers funds directly to another player | Supports shorthand (`/pay Steve 50k`) |
-| `/shop` | Opens the server item marketplace GUI | Buy and sell basic commodities |
-| `/ah` | Opens the global player auction house | Search by enchant, tool, or player |
-| `/ah sell <price>` | Lists the item in your main hand on the auction house | 48-hour expiration |
+| Command | What It Does |
+| :--- | :--- |
+| `/menu` | Opens the main server menu with quick buttons for everything. |
+| `/spawn` | Teleports you back to the main spawn hub. |
+| `/tpa <player>` | Asks a friend if you can teleport to them. |
+| `/tpaccept` | Accepts a friend's teleport request. |
+| `/tpdeny` | Declines a friend's teleport request. |
+| `/sethome [name]` | Saves your current spot as a home waypoint (e.g., `/sethome base`). |
+| `/home [name]` | Teleports you back to your saved home waypoint. |
+| `/back` | Teleports you back to where you just died or teleported from. |
+| `/rtp` | Teleports you to a random safe spot out in the wild. |
 
 ---
 
-## 4. Voice Chat & Combat
+## Protecting Your Base
 
-| Command | Description | Notes |
-| :--- | :--- | :--- |
-| `/voice` or `/audio` | Generates your private proximity audio web link | For Bedrock & mobile players |
-| `/duel <player>` | Challenges a player to an arena duel | Preserves survival inventory |
-| `/duel accept <player>`| Accepts an arena duel invitation | Teleports to duel stadium |
+| Command | What It Does |
+| :--- | :--- |
+| `/claim` | Creates a protected claim around where you stand (use a Golden Shovel). |
+| `/trust <friend>` | Lets your friend build and open chests inside your base. |
+| `/containertrust <friend>` | Lets a friend open your chests, but they cannot break blocks. |
+| `/accesstrust <friend>` | Lets visitors open doors and press buttons in your base. |
+| `/untrust <friend>` | Takes away a player's permissions in your base. |
+| `/abandonclaim` | Deletes the claim you are standing in and gives you your blocks back. |
+
+---
+
+## Money & Trading
+
+| Command | What It Does |
+| :--- | :--- |
+| `/bal` | Shows how many coins you have in your wallet. |
+| `/pay <player> <amount>` | Gives money to another player (e.g., `/pay Steve 500`). |
+| `/shop` | Opens the server shop to buy blocks and sell extra items. |
+| `/ah` | Opens the player auction house to buy and sell enchanted gear. |
+| `/ah sell <price>` | Puts the item in your hand up for sale on the auction house. |
+
+---
+
+## Talking & Fun
+
+| Command | What It Does |
+| :--- | :--- |
+| `/voice` | Gives you a private link to talk to nearby players in-game. |
+| `/duel <player>` | Challenges another player to a safe 1v1 arena duel. |
+| `/duel accept <player>` | Accepts a 1v1 arena duel challenge. |

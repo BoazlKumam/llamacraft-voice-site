@@ -1,62 +1,45 @@
 # How to Join LlamaCraft
 
-LlamaCraft is a unified cross-play server running on PaperMC. Players on Java Edition, Bedrock Edition (iOS, Android, Windows, Consoles), and Education Edition can all play together in the same world.
+You can play on LlamaCraft using almost any device that runs Minecraft!
 
 ---
 
-## Server Address Details
+## Server Address
 
-- **Server IP / Hostname**: `164.152.106.210`
-- **Java Port**: `25565` (Default)
-- **Bedrock Port**: `19132` (Default)
-
----
-
-## 1. Java Edition (PC / Mac / Linux)
-
-1. Launch Minecraft Java Edition (Version `1.20.x` or `1.21.x`).
-2. Click **Multiplayer** > **Add Server**.
-3. Set **Server Name** to `LlamaCraft`.
-4. Enter **Server Address**: `164.152.106.210`.
-5. Click **Done**, select the server, and click **Join Server**.
+- **Server IP**: `164.152.106.210`
+- **Java Port**: `25565`
+- **Bedrock Port**: `19132`
 
 ---
 
-## 2. Bedrock Mobile & Windows 10/11
+## 1. Java Edition (PC & Mac)
 
-1. Open Minecraft on your phone, tablet, or Windows PC.
-2. Tap **Play** > navigate to the **Servers** tab.
-3. Scroll to the bottom and click **Add Server**.
-4. Fill in the fields:
+1. Open Minecraft Java Edition (`1.20` or `1.21`).
+2. Click **Multiplayer** then **Add Server**.
+3. Put `LlamaCraft` as the Server Name.
+4. Type `164.152.106.210` as the Server Address.
+5. Click **Done** and double-click to join!
+
+---
+
+## 2. Bedrock (Phone, iPad, Tablet, Windows 10/11)
+
+1. Open Minecraft on your phone, iPad, or computer.
+2. Click **Play** and tap the **Servers** tab at the top.
+3. Scroll all the way down and tap **Add Server**.
+4. Fill in:
    - **Server Name**: `LlamaCraft`
    - **Server Address**: `164.152.106.210`
    - **Port**: `19132`
-5. Click **Save** or **Play** to connect immediately.
+5. Click **Play** to jump right in!
 
 ---
 
 ## 3. Consoles (Xbox, PlayStation, Nintendo Switch)
 
-Because console platforms restrict custom external server IPs in their main menu, use one of the two standard connection bridges:
+Consoles don't have an "Add Server" button by default, but you can join easily using your phone:
 
-### Method A: BedrockConnect DNS (No App Required)
-1. Go to your console's **Network Settings** > **Advanced Settings** > **DNS Settings**.
-2. Change DNS from Automatic to **Manual**.
-3. Set **Primary DNS** to `104.238.130.180` (or `172.86.113.167`).
-4. Set Secondary DNS to `1.1.1.1` (or `8.8.8.8`).
-5. Open Minecraft, click **Play** > **Servers**, and join any featured server (e.g., The Hive or CubeCraft).
-6. A BedrockConnect menu will pop up. Select **Connect to a Server**, type `164.152.106.210` with port `19132`, and check **Add to server list**.
-
-### Method B: MC Server Connector App (Mobile LAN Bridge)
-1. Download **MC Server Connector** or **BedrockTogether** on your phone (iOS / Android).
-2. Connect your phone to the same Wi-Fi network as your console.
-3. In the app, enter IP `164.152.106.210` and Port `19132`, then tap **Play / Start**.
-4. On your console, open Minecraft, go to **Friends**, and click the LAN game that appears under `LlamaCraft`.
-
----
-
-## 4. Minecraft Education Edition
-
-1. Ensure your client supports external protocol connections.
-2. Enter the server host `164.152.106.210` and port `19132`.
-3. If connecting behind a school network, verify UDP port 19132 outbound traffic is open.
+1. Download the free app called **MC Server Connector** (or **BedrockTogether**) on your phone.
+2. Make sure your phone is connected to the same home Wi-Fi as your console.
+3. In the phone app, type IP `164.152.106.210` and Port `19132`, then tap **Start**.
+4. On your console, open Minecraft, go to **Friends**, and look under **LAN Games**. Click `LlamaCraft` to join!

@@ -3,61 +3,59 @@ layout: home
 
 hero:
   name: "LlamaCraft"
-  text: "Server Intelligence & Statistics Hub"
-  tagline: "Infrastructure metrics, complete 53 custom enchantment gear matrix, fishing drop probabilities, and player survival guides."
+  text: "The Official Minecraft Server"
+  tagline: "A fun survival server with custom enchants, proximity voice chat, land protection, and cross-play for everyone."
   image:
     src: /llama.jpg
-    alt: LlamaCraft Voxel Mascot
+    alt: LlamaCraft Mascot
   actions:
     - theme: brand
-      text: What Enchants Go Where
-      link: /enchants/gear-matrix
+      text: What Enchants Go on What
+      link: /enchants/gear-guide
     - theme: alt
-      text: Server Specs & Stats
-      link: /stats/server
+      text: How to Join
+      link: /info/how-to-join
     - theme: alt
-      text: Master Commands
+      text: Commands List
       link: /info/commands
 
 features:
-  - title: What Enchants Go Where
-    details: Complete matrix mapping all 53 custom enchantments and vanilla caps across Helmets, Chestplates, Leggings, Boots, Swords, Axes, Bows, and Maces.
-    link: /enchants/gear-matrix
-  - title: Live Technical Infrastructure
-    details: Dedicated Linux hardware cluster running Paper 1.21.x with 20.0 TPS target, asynchronous chunking, and low-latency packet routing.
-    link: /stats/server
-  - title: Fishing & Loot Probabilities
-    details: Exact mathematical drop weights and catch rates for Sealed Tomes (Uncommon 4.66%, Arcane 2.33%, Relic 0.62%).
-    link: /stats/economy
-  - title: Cross-Play Endpoints
-    details: Complete port directory for Java (25565), Bedrock Mobile & PC (19132), Console DNS bridges, and Education Edition.
-    link: /info/how-to-join
-  - title: Territory & Siege Windows
-    details: GriefPrevention land claims with balanced SiegeTime raiding windows, claim shields, and TNT / crystal raid physics.
-    link: /info/claims-siege
-  - title: Proximity Directional Audio
-    details: 3D spatial directional voice setup with zero client mods required on Bedrock and modded Simple Voice Chat on Java.
+  - title: Custom Enchants
+    details: Put cool magic on your gear like extra hearts, 3x3 mining, lightning strikes, and fire shields.
+    link: /enchants/gear-guide
+  - title: Talk In-Game (Voice Chat)
+    details: Hear players get louder as they walk closer to you, just like real life. Works on PC, phones, and consoles.
     link: /info/voice-chat
+  - title: Play on Any Device
+    details: Java players, Bedrock players on phones, tablets, PCs, and consoles can all play together in the same world.
+    link: /info/how-to-join
+  - title: Protect Your Base
+    details: Claim your land with a golden shovel so nobody can grief your blocks, open your chests, or steal your loot.
+    link: /info/claims
+  - title: Fishing & Magic Books
+    details: Catch rare fish and unlock secret enchantment books just by fishing with friends.
+    link: /info/fishing-money
+  - title: Easy Commands
+    details: Simple commands to teleport to friends, set your home, open shops, and join fun arena battles.
+    link: /info/commands
 ---
 
-## Server Quick Statistics
+## Server IP and Connection
 
-| Data Point | Value | Notes |
-| :--- | :--- | :--- |
-| **Server Address (Java)** | `164.152.106.210:25565` | Compatible with 1.20.x - 1.21.x |
-| **Server Address (Bedrock)** | `164.152.106.210:19132` | Bedrock Mobile, Windows 10/11, Consoles |
-| **Server Architecture** | Paper 1.21.x on Dedicated Linux | Monitored by Crafty Controller 4 |
-| **Target Tick Timing** | 20.0 TPS / < 18ms MSPT | Asynchronous chunk loading |
-| **Active Dimensions** | 6 Worlds | Overworld, Nether, End, Hub, SurvSpawn, Siyon |
-| **Custom Enchantments** | 53 Custom Enchants | Uncommon (19), Rare (23), Mythic (11) |
-| **Claim Blocks Accrual** | 100 blocks / hour played | Starts with 100 free claim blocks |
+Type this into your Minecraft server list to play:
+
+| Device | Server Address | Port | Version |
+| :--- | :--- | :--- | :--- |
+| **Java (PC, Mac)** | `164.152.106.210` | `25565` | `1.20 - 1.21` |
+| **Bedrock (Phone, iPad, Windows 10/11)** | `164.152.106.210` | `19132` | Latest Bedrock |
+| **Consoles (Xbox, PlayStation, Switch)** | Use Bedrock DNS | `19132` | Latest Bedrock |
 
 ---
 
-## Quick Navigation Directory
+## Quick Links
 
-- **[What Enchants Go Where Matrix](/enchants/gear-matrix)**: Check max levels and compatibility for any weapon, armor piece, or tool.
-- **[Hardware, Ports & Specs](/stats/server)**: Review port forwarding, MSPT thresholds, and spawner drop mechanics.
-- **[Economy & Fishing Probabilities](/stats/economy)**: See exact tome weights, market rules, and wealth tiers.
-- **[Master Commands Guide](/info/commands)**: Commands for `/menu`, `/tpa`, `/claim`, `/shop`, `/voice`, and `/duel`.
-- **[How to Join](/info/how-to-join)**: Setup guides for Java, Bedrock Mobile, Xbox, PlayStation, and Switch.
+- **[Enchantments Guide](/enchants/gear-guide)**: See which enchants go on helmets, chestplates, swords, bows, and tools.
+- **[How to Join](/info/how-to-join)**: Easy steps to connect from your phone, computer, or console.
+- **[Commands List](/info/commands)**: Useful commands like `/menu`, `/tpa`, and `/sethome`.
+- **[Protect Your Base](/info/claims)**: How to claim your house with a golden shovel.
+- **[Server Rules](/info/rules)**: Fair-play rules to keep the game fun for everyone.

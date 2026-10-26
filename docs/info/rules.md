@@ -1,32 +1,31 @@
-# Server Rules & Guidelines
+# Server Rules
 
-To ensure a fair, competitive, and enjoyable environment for everyone on LlamaCraft, all players must abide by the following server regulations.
-
----
-
-## 1. Respect and Fair Play
-- Harassment, hate speech, slurs, threats, and discrimination are strictly prohibited.
-- Do not bypass server chat filters, mute punishments, or ban enforcements using alternate accounts.
-- Respect server moderators and staff decisions. Appeals can be submitted via Discord ticket.
+Follow these simple rules so everyone can have fun playing on LlamaCraft!
 
 ---
 
-## 2. Fair Competition & Client Integrity
-- **Allowed Mods**: Optimization mods (Sodium, Lithium, Iris, OptiFine), HUD information mods (ArmorStatus, Minimap without entity radars), Simple Voice Chat client mod.
-- **Prohibited Modifications**: Any client hacks, auto-clickers, macros exceeding human CPS limits, baritone automation, X-Ray texture packs, or reach/hitbox modifications.
-- Unfair advantages result in an immediate automatic ban by our anti-cheat engine.
+## 1. Be Nice & Respect Others
+- Treat other players kindly. No mean words, hate speech, bullying, or swearing in chat.
+- Don't spam messages in chat or keep bugging people who ask to be left alone.
+- Listen to server staff. If you have an issue, open a ticket on Discord.
 
 ---
 
-## 3. Land Claims & Raiding Mechanics
-- Players may protect their bases using the land claim tool (`/claim`).
-- During designated **Siege Windows**, claims can be contested under standard server siege rules.
-- Do not exploit chunk boundaries, ghost blocks, or combat-logging glitches during PVP encounters.
-- Intentional lag machines, extreme redstone clock spam, or server-crashing item drops will be permanently purged.
+## 2. Play Fair (No Cheating)
+- **Allowed Mods**: Performance mods like Sodium, OptiFine, minimaps (without player radars), and Simple Voice Chat.
+- **Cheating is NOT Allowed**: No hacked clients, no auto-clickers, no X-Ray packs, and no flying hacks.
+- If you use hacks, our anti-cheat will ban you automatically.
 
 ---
 
-## 4. Voice Chat Conduct
-- No ear-rape, high-gain noise blasting, or screaming into proximity voice.
-- Soundboard clips must not be spammed repeatedly in crowded public areas.
-- Respect player muting preferences.
+## 3. Respect Bases
+- Don't try to glitch through walls or steal items from protected bases.
+- Don't build lag machines or drop thousands of items to slow down the server.
+- Raid battles only happen during scheduled weekend raid hours.
+
+---
+
+## 4. Voice Chat Rules
+- No screaming loudly into your microphone or playing loud noises.
+- Don't spam meme soundboard clips in crowded areas.
+- If someone asks you to mute or quiet down, please be polite and listen.
