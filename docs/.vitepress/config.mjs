@@ -16,32 +16,35 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Enchants Guide', link: '/enchants/gear-guide' },
+      { text: 'Enchant Conflicts', link: '/enchants/conflicts' },
+      { text: 'Domain Expansions', link: '/info/domains' },
       { text: 'Commands', link: '/info/commands' },
-      { text: 'How to Join', link: '/info/how-to-join' },
-      { text: 'Rules', link: '/info/rules' }
+      { text: 'How to Join', link: '/info/how-to-join' }
     ],
 
     sidebar: [
       {
         text: 'Enchantments',
         items: [
-          { text: 'What Enchants Go on What', link: '/enchants/gear-guide' }
+          { text: 'What Enchants Go on What', link: '/enchants/gear-guide' },
+          { text: 'Enchant Conflicts & Drawbacks', link: '/enchants/conflicts' }
         ]
       },
       {
-        text: 'Server Info',
+        text: 'Special Gameplay',
+        items: [
+          { text: 'Domain Expansions Guide', link: '/info/domains' },
+          { text: 'Fishing & Magic Books', link: '/info/fishing-money' },
+          { text: 'Protect Your Base (Claims)', link: '/info/claims' },
+          { text: 'Voice Chat Setup', link: '/info/voice-chat' }
+        ]
+      },
+      {
+        text: 'Server Info & Rules',
         items: [
           { text: 'Server IP & Details', link: '/info/server-info' },
-          { text: 'Fishing & Money', link: '/info/fishing-money' }
-        ]
-      },
-      {
-        text: 'Player Guides',
-        items: [
           { text: 'Commands List', link: '/info/commands' },
           { text: 'How to Join', link: '/info/how-to-join' },
-          { text: 'Protect Your Base (Claims)', link: '/info/claims' },
-          { text: 'Voice Chat Setup', link: '/info/voice-chat' },
           { text: 'Server Rules', link: '/info/rules' }
         ]
       }

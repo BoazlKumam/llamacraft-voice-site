@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "LlamaCraft"
   text: "The Official Minecraft Server"
-  tagline: "A fun survival server with custom enchants, proximity voice chat, land protection, and cross-play for everyone."
+  tagline: "A fun survival server with custom enchants, Domain Expansions, proximity voice chat, land protection, and cross-play."
   image:
     src: /llama.jpg
     alt: LlamaCraft Mascot
@@ -13,31 +13,31 @@ hero:
       text: What Enchants Go on What
       link: /enchants/gear-guide
     - theme: alt
-      text: How to Join
-      link: /info/how-to-join
+      text: Domain Expansions
+      link: /info/domains
     - theme: alt
-      text: Commands List
-      link: /info/commands
+      text: Enchant Conflicts
+      link: /enchants/conflicts
 
 features:
   - title: Custom Enchants
     details: Put cool magic on your gear like extra hearts, 3x3 mining, lightning strikes, and fire shields.
     link: /enchants/gear-guide
+  - title: Enchant Rules & Conflicts
+    details: See which enchants work together and which ones conflict, like Fortune vs Silk Touch.
+    link: /enchants/conflicts
+  - title: Domain Expansions
+    details: Trap nearby enemies inside an isolated sky arena where you pick the battle rules!
+    link: /info/domains
   - title: Talk In-Game (Voice Chat)
-    details: Hear players get louder as they walk closer to you, just like real life. Works on PC, phones, and consoles.
+    details: Hear players get louder as they walk closer to you. Works on PC, phones, and consoles.
     link: /info/voice-chat
-  - title: Play on Any Device
-    details: Java players, Bedrock players on phones, tablets, PCs, and consoles can all play together in the same world.
-    link: /info/how-to-join
   - title: Protect Your Base
-    details: Claim your land with a golden shovel so nobody can grief your blocks, open your chests, or steal your loot.
+    details: Claim your land with a golden shovel so nobody can grief your blocks or steal your loot.
     link: /info/claims
-  - title: Fishing & Magic Books
-    details: Catch rare fish and unlock secret enchantment books just by fishing with friends.
-    link: /info/fishing-money
-  - title: Easy Commands
-    details: Simple commands to teleport to friends, set your home, open shops, and join fun arena battles.
-    link: /info/commands
+  - title: Play on Any Device
+    details: Java players, Bedrock players on phones, tablets, PCs, and consoles all play together in the same world.
+    link: /info/how-to-join
 ---
 
 ## Server IP and Connection
@@ -52,10 +52,11 @@ Type this into your Minecraft server list to play:
 
 ---
 
-## Quick Links
+## Important Player Guides
 
-- **[Enchantments Guide](/enchants/gear-guide)**: See which enchants go on helmets, chestplates, swords, bows, and tools.
-- **[How to Join](/info/how-to-join)**: Easy steps to connect from your phone, computer, or console.
-- **[Commands List](/info/commands)**: Useful commands like `/menu`, `/tpa`, and `/sethome`.
-- **[Protect Your Base](/info/claims)**: How to claim your house with a golden shovel.
-- **[Server Rules](/info/rules)**: Fair-play rules to keep the game fun for everyone.
+- **[What Enchants Go on What](/enchants/gear-guide)**: Full list of custom enchants for helmets, chestplates, swords, and tools.
+- **[Enchant Conflicts & Drawbacks](/enchants/conflicts)**: Learn what enchants cannot go together and which ones have trade-offs.
+- **[Domain Expansions Guide](/info/domains)**: How to cast your domain, pick rules, and defend with shields.
+- **[Protect Your Base](/info/claims)**: How to claim your land and add friends.
+- **[How to Join](/info/how-to-join)**: Easy connection steps for every device.
+- **[Commands List](/info/commands)**: Helpful commands like `/menu`, `/tpa`, `/home`, and `/spawn`.
