@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/llamacraft-voice-site/',
+  base: process.env.BASE_URL || '/',
   title: 'LlamaCraft',
   description: 'The Official LlamaCraft Minecraft Server Guide',
   lang: 'en-US',
