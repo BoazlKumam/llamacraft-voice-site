@@ -13,6 +13,19 @@ Just like in regular Minecraft where you cannot put **Fortune** and **Silk Touch
 
 ---
 
+## How to Level Up Enchants (Boss Catalysts)
+
+Instead of having to hunt for the same book twice to level it up, you can use **Catalysts** dropped by bosses in an anvil:
+
+| Catalyst | What It Looks Like | How to Get It | What It Does in an Anvil |
+| :--- | :--- | :--- | :--- |
+| **Mob Essence Catalyst** | Echo Shard | Drops from killing the **Warden** in Ancient Cities | Upgrades any custom enchant by **+1 level** (e.g., Venom I -> Venom II). Costs 5 XP levels. |
+| **Astral Essence Catalyst** | Nether Star | Drops from defeating the **Wither Boss** | **Instant Max Level!** Instantly maxes out a book to its highest level, or upgrades **every** custom enchant on your armor at once! Costs 10 XP levels. |
+
+*Note: In the anvil, placing a stack of catalysts only consumes 1 single catalyst, so your remaining stack is completely safe!*
+
+---
+
 ## Enchants with Drawbacks (Trade-Offs)
 
 Most enchants give you pure bonuses, but a few powerful enchants have a trade-off you should know about before using them:
