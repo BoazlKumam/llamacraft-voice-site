@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/llamacraft-voice-site/',
   title: 'LlamaCraft',
   description: 'Official Cross-Play Minecraft Server & Proximity Voice Chat',
   lang: 'en-US',
